@@ -10,7 +10,9 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest    
+    environment: prueba  # Specify the environment here
+
 
     steps:
     - name: Check out repository
