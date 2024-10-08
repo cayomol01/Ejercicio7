@@ -30,7 +30,7 @@ jobs:
     - name: Build package
       run: |
         python -m build
-      working-directory: ./dist  # Adjust this to the correct subdirectory
+      working-directory: dist/  # Adjust this to the correct subdirectory
 
     - name: Upload Artifacts
       uses: actions/upload-artifact@v3
