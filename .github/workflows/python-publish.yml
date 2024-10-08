@@ -43,5 +43,5 @@ jobs:
         TWINE_USERNAME: "__token__"  # Special username for token-based auth
         TWINE_PASSWORD: ${{ secrets.TEST_PYPI_API_TOKEN }}  # Use the secret stored in GitHub
       run: |
-        python -m twine upload --repository testpypi dist/*
+        python -m twine upload --repository testpypi dist/* --verbose
       working-directory: ./packaging_tutorial  # Adjust this to the correct subdirectory
